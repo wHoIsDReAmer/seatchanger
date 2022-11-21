@@ -1,0 +1,22 @@
+.raffle {
+    text-align: center;
+    font-family: applefont2;
+}
+
+.raffle_box #raffle_button {
+    width: 110px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all .3s ease-in-out;
+    background: linear-gradient(90deg,  rgb(51, 111, 255), rgb(222, 128, 255));
+    background-size: 150% 150%;
+    font-family: applefont1;
+    cursor: pointer;
+}
+
+.raffle_box #raffle_button:hover {
+    background-position: 100% 100%;
+    scale: 110%;
+}

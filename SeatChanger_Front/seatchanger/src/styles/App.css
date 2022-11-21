@@ -1,0 +1,86 @@
+body {
+    margin: 0px;
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 80vw;
+    height: 100vh;
+}
+
+.seats {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    row-gap: 3vh;
+}
+
+.seats .seat {
+    width: 160px;
+    height: 120px;
+    border: 2px solid rgb(51, 112, 255);
+    border-radius: 12px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+
+    transition: all .3s ease-in-out;
+
+    color: rgb(51, 112, 255);
+    font-family: applefont1;
+    user-select: none;
+}
+
+.seat .number {
+    margin-left: 10px;
+}
+
+.seat .author {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.seats .seat:hover {
+    scale: 110%;
+}
+
+@media (max-width: 780px) {
+    .seats {
+        grid-template-columns: 1fr;
+    }
+}
+
+@font-face {
+    font-family: applefont2;
+    src: url("../fonts/AppleSDGothicNeoR.woff2") format("woff2");
+}
+
+.main h3 {
+    font-family: applefont2;
+}
+
+.admin_box {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 3vw;
+}
+
+.admin_box #admin_btn {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all .3s ease-in-out;
+    background: linear-gradient(90deg,  rgb(51, 111, 255), rgb(222, 128, 255));
+    background-size: 150% 150%;
+    font-family: applefont1;
+    cursor: pointer;
+}
+
+.admin_box #admin_btn:hover {
+    background-position: 100% 100%;
+    scale: 110%;
+}

@@ -1,0 +1,59 @@
+.login_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90%;
+    text-align: center;
+    font-family: applefont1;
+}
+
+.wrapper_login {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_box input {
+    padding: 15px 30px;
+    border: none;
+    border-bottom: 3px solid rgba(70, 87, 255);
+    border-radius: 5px;
+    border-left: 0px solid white;
+    border-right: 0px solid white;
+    border-top: 0px solid;
+    outline: none;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: applefont2;
+    display: block;
+}
+
+.login_box input::placeholder {
+    color: rgb(133, 133, 133);
+    font-family: applefont2;
+    font-weight: 900;
+}
+
+.login_box input:focus {
+    width: 120%;
+}
+
+.login_box #login_btn {
+    width: 110px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: all .3s ease-in-out;
+    background: linear-gradient(90deg, rgb(51, 111, 255), rgb(222, 128, 255));
+    background-size: 150% 150%;
+    font-family: applefont1;
+    cursor: pointer;
+}
+
+.login_box #login_btn:hover {
+    background-position: 100% 100%;
+    scale: 110%;
+}
